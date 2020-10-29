@@ -1,12 +1,260 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+  <body class="container">
+    <header>
+      <nav class="navigation">
+        <a class="main-logo">
+          <img
+            src="img/main-logo.svg"
+            width="163"
+            height="35"
+            alt="Логотип магазина"
+          />
+        </a>
+        <ul class="interaction-items">
+          <li class="site-search">
+            <input type="text" value="Поиск по сайту" />
+          </li>
+          <li class="login-link">
+            <a href="#">Войти</a>
+          </li>
+          <li class="compare-link">
+            <a href="#">Сравнить</a>
+          </li>
+          <li class="cart-link">
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
+        <ul class="site-navigation">
+          <li class="menu-catalog">
+            <a href="#">Каталог товаров</a>
+          </li>
+          <li class="menu-delivery">
+            <a href="#">Доставка</a>
+          </li>
+          <li class="menu-guarantee">
+            <a href="#">Гарантия</a>
+          </li>
+          <li class="menu-contacts">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
+      <h1 class="visually-hidden">Выбери свой гаджет</h1>
+      <!-- скроем -->
+      <section class="product">
+        <img
+          class="product-photo"
+          src="img/product-photo-1.png"
+          width="384px"
+          height="486px"
+        />
+        <div>
+          <span class="item-number">01</span>
+          <h2>
+            Делай селфи, <br />
+            как Бен Стиллер!
+          </h2>
+          <p class="item-description">
+            Самая длинная палка для селфи доступна в нашем магазине. Восемь
+            (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+          </p>
+          <a class="details-button" href="#">Подробнее</a>
+          <ul class="slider-list">
+            <li class="slider-toggle">
+              <a href="#">
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="6" cy="6" r="5.5" stroke="black" />
+                </svg>
+              </a>
+            </li>
+            <li class="slider-toggle slider-toggle-active">
+              <a href="#">
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="6" cy="6" r="5.5" stroke="black" />
+                </svg>
+              </a>
+            </li>
+            <li class="slider-toggle">
+              <a href="#">
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="6" cy="6" r="5.5" stroke="black" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <ul class="specifications">
+            <li>
+              <p>8,5 м</p>
+              <p>Длина палки</p>
+            </li>
+            <li>
+              <p>5 кг</p>
+              <p>Вес палки</p>
+            </li>
+            <li>
+              <p>Карбон</p>
+              <p>Материал</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <ul class="items-list">
+        <li>
+          <h3>Виртуальная реальность</h3>
+          <img />
+        </li>
+        <li>
+          <h3>Моноподы для селфи</h3>
+          <img />
+        </li>
+        <li>
+          <h3>Экшн-камеры</h3>
+          <img />
+        </li>
+        <li>
+          <h3>Фитнес-браслеты</h3>
+          <img />
+        </li>
+        <li>
+          <h3>Умные часы</h3>
+          <img />
+        </li>
+        <li>
+          <h3>Квадрокоптеры</h3>
+          <img />
+        </li>
+      </ul>
+      <section class="our-terms">
+        <ul>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
+          <li>
+            <a href="#">Кредит</a>
+          </li>
+        </ul>
+        <div>
+          <h2>Доставка</h2>
+          <p>
+            Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+            совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на
+            ваш этаж.
+          </p>
+        </div>
+      </section>
+      <ul class="partners-list">
+        <li><img /></li>
+        <li><img /></li>
+        <li><img /></li>
+        <li><img /></li>
+      </ul>
+      <section class="about">
+        <h2>О нас</h2>
+        <p>
+          Огромный выбор гаджетов не оставит равнодушным гика, который есть в
+          каждом из нас.
+        </p>
+        <p>
+          Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE
+          работает со многими транспортными компаниями:
+        </p>
+        <ul>
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a href="#">подробнее о нас</a>
+      </section>
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p>
+          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+          проверить работоспособность покупки. Всякое бывает.
+        </p>
+        <img class="map" />
+        <a href="#">Напишите нам</a>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <h2 class="visually-hidden">Наш адрес</h2>
+        <!-- скроем -->
+        <img class="logo-footer" />
+        <p>г. Москва, ул. Строителей, 15</p>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Условия и социальные сети</h2>
+        <!-- скроем -->
+        <ul>
+          <li>Доставка</li>
+          <li>Гарантия</li>
+          <li>Контакты</li>
+        </ul>
+        <ul class="social-list">
+          <li>
+            <a href="#">Facebook</a>
+          </li>
+          <li>
+            <a href="#">Instagram</a>
+          </li>
+          <li>
+            <a href="#">Twitter</a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Навигация и связь с нами</h2>
+        <!-- скроем -->
+        <ul>
+          <li>
+            <a href="#">Войти</a>
+          </li>
+          <li>
+            <a href="#">Сравнить</a>
+          </li>
+          <li>
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
+        <div>
+          <p>Тел.:</p>
+          <a class="footer-phone" href="tel:+74954959595">+7 (495) 495-95-95</a>
+        </div>
+        <img class="website-by-logo" />
+      </section>
+    </footer>
   </body>
 </html>
