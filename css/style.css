@@ -35,6 +35,7 @@
   --basic-white: #ffffff;
   --basic-yellow: #f7e296;
   --button-yellow: #f0c52e;
+  --basic-gray-light: #e5e5e5;
 }
 
 body {
@@ -271,23 +272,26 @@ img {
   list-style: none;
 }
 
-.details-button {
+.button-yello-gradient {
   display: block;
-  width: 220px;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 60px;
   color: var(--basic-black);
   background-image: linear-gradient(
-    var(--basic-white) 7px,
+    transparent 7px,
     var(--button-yellow) 7px,
     var(--button-yellow) 14px,
-    var(--basic-white) 14px
+    transparent 14px
   );
+}
+
+.details-button {
+  width: 220px;
+  margin-top: 60px;
 }
 
 .specifications {
@@ -336,4 +340,134 @@ img {
 
 .slider-toggle:not(:last-child) {
   margin-right: 18px;
+}
+
+.items-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  padding-top: 73px;
+}
+
+.items-list li {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  width: 160px;
+}
+
+.items-list h3 {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  margin-top: 38px;
+}
+.items-list a {
+  display: flex;
+  justify-content: center;
+  width: 160px;
+  height: 160px;
+  background-color: var(--basic-yellow);
+}
+
+.fitness-braclet h3 {
+  letter-spacing: normal;
+}
+
+.monopod img {
+  padding-top: 10px;
+}
+
+/* надо сделать серый цвет на всю ширину */
+
+.our-terms {
+  font-family: Gilroy;
+  font-weight: 800;
+  display: grid;
+  grid-template-columns: 277px 1fr;
+  height: 439px;
+  background-image: linear-gradient(
+    var(--basic-white) 152px,
+    var(--basic-gray-light) 152px
+  );
+}
+
+.our-terms ul {
+  box-sizing: border-box;
+  position: relative;
+  list-style: none;
+  padding-left: 0;
+  padding-top: 116px;
+  padding-bottom: 104px;
+}
+
+.our-terms ul::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 320px;
+  top: 38px;
+  left: 277px;
+  background-color: var(--basic-black);
+}
+
+.our-terms h2 {
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+  margin-top: 123px;
+}
+
+.our-terms div {
+  position: relative;
+  padding-left: 123px;
+}
+
+.our-terms div::before {
+  content: "";
+  position: absolute;
+  width: 136px;
+  height: 164px;
+  right: 2px;
+  top: 123px;
+  background-image: url(../img/delivery-man.svg);
+}
+
+.our-terms p {
+  font-family: "Open Sans";
+  font-weight: 300;
+  width: 495px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+}
+
+.our-terms-guarantee,
+.our-terms-credit {
+  width: 160px;
+}
+
+.our-terms-delivery {
+  display: block;
+  width: 258px;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 9px 0;
+  padding-left: 19px;
+  color: var(--basic-yellow);
+  background-color: var(--basic-black);
+}
+
+.our-terms-guarantee {
+  margin-top: 30px;
+}
+
+.our-terms-credit {
+  margin-top: 40px;
 }
