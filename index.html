@@ -7,8 +7,8 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
-  <body class="container">
-    <header>
+  <body>
+    <header class="container">
       <nav class="navigation">
         <a class="main-logo">
           <img
@@ -52,14 +52,14 @@
     <main>
       <h1 class="visually-hidden">Выбери свой гаджет</h1>
       <!-- скроем -->
-      <section class="product">
+      <section class="product container">
         <img
           class="product-photo"
           src="img/product-photo-1.png"
           width="384px"
           height="486px"
         />
-        <div>
+        <div class="item-card">
           <span class="item-number">01</span>
           <h2>
             Делай селфи, <br />
@@ -69,48 +69,14 @@
             Самая длинная палка для селфи доступна в нашем магазине. Восемь
             (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
           </p>
-          <a class="details-button button-yello-gradient" href="#">Подробнее</a>
-          <ul class="slider-list">
-            <li class="slider-toggle">
-              <a href="#">
-                <svg
-                  width="12"
-                  height="12"
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="6" cy="6" r="5.5" stroke="black" />
-                </svg>
-              </a>
-            </li>
-            <li class="slider-toggle">
-              <a href="#">
-                <svg
-                  width="12"
-                  height="12"
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="6" cy="6" r="5.5" stroke="black" />
-                </svg>
-              </a>
-            </li>
-            <li class="slider-toggle">
-              <a href="#">
-                <svg
-                  width="12"
-                  height="12"
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="6" cy="6" r="5.5" stroke="black" />
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <a class="details-button button-yellow-gradient" href="#"
+            >Подробнее</a
+          >
+          <div class="slider-list">
+            <button class="slider-toggle" type="button"></button>
+            <button class="slider-toggle" type="button"></button>
+            <button class="slider-toggle" type="button"></button>
+          </div>
           <ul class="specifications">
             <li>
               <p>8,5 м</p>
@@ -127,7 +93,7 @@
           </ul>
         </div>
       </section>
-      <ul class="items-list">
+      <ul class="items-list container">
         <li>
           <h3>Виртуальная реальность</h3>
           <a href="#">
@@ -194,12 +160,12 @@
             <a class="our-terms-delivery" href="#">Доставка</a>
           </li>
           <li>
-            <a class="our-terms-guarantee button-yello-gradient" href="#"
+            <a class="our-terms-guarantee button-yellow-gradient" href="#"
               >Гарантия</a
             >
           </li>
           <li>
-            <a class="our-terms-credit button-yello-gradient" href="#"
+            <a class="our-terms-credit button-yellow-gradient" href="#"
               >Кредит</a
             >
           </li>
@@ -213,13 +179,13 @@
           </p>
         </div>
       </section>
-      <ul class="partners-list">
+      <ul class="partners-list container">
         <li><img /></li>
         <li><img /></li>
         <li><img /></li>
         <li><img /></li>
       </ul>
-      <section class="about">
+      <section class="about container">
         <h2>О нас</h2>
         <p>
           Огромный выбор гаджетов не оставит равнодушным гика, который есть в
@@ -236,7 +202,7 @@
         </ul>
         <a href="#">подробнее о нас</a>
       </section>
-      <section class="contacts">
+      <section class="contacts container">
         <h2>Контакты</h2>
         <p>
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
