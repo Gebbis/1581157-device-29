@@ -20,16 +20,72 @@
         </a>
         <ul class="interaction-items">
           <li class="site-search">
-            <input type="text" value="Поиск по сайту" />
+            <input type="search" placeholder="Поиск по сайту" />
+            <div>
+              <button type="button">Найти</button>
+            </div>
           </li>
-          <li class="login-link">
-            <a href="#">Войти</a>
+          <li class="login-black">
+            <a href="#"
+              ><svg
+                width="13"
+                height="14"
+                viewBox="0 0 13 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.49996 2.33333C7.69704 2.33333 8.66663 3.3775 8.66663 4.66666C8.66663 5.95583 7.69704 7 6.49996 7C5.30288 7 4.33329 5.95583 4.33329 4.66666C4.33329 3.3775 5.30288 2.33333 6.49996 2.33333ZM6.49996 11.6667C6.49996 11.6667 10.8333 11.6667 10.8333 10.5C10.8333 9.1 8.72079 7.58333 6.49996 7.58333C4.27913 7.58333 2.16663 9.1 2.16663 10.5C2.16663 11.6667 6.49996 11.6667 6.49996 11.6667Z"
+                  fill="black"
+                />
+              </svg>
+              Войти</a
+            >
           </li>
-          <li class="compare-link">
-            <a href="#">Сравнить</a>
+          <li class="compare-black">
+            <a href="#"
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.91675 5.36667H4.66675V11.0833H2.91675V5.36667ZM6.18342 2.91667H7.81675V11.0833H6.18342V2.91667ZM9.45008 7.58334H11.0834V11.0833H9.45008V7.58334Z"
+                  fill="black"
+                />
+              </svg>
+              Сравнить</a
+            >
           </li>
-          <li class="cart-link">
-            <a href="#">Корзина</a>
+          <li class="cart-black">
+            <a href="#"
+              ><svg
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M9.86215 2.5217C9.79278 2.43991 9.69341 2.39316 9.58927 2.39316H7.65774V3.4188C7.65774 3.89008 7.25359 4.2735 6.75684 4.2735C6.26008 4.2735 5.85593 3.89008 5.85593 3.4188V2.39316H4.05413V3.4188C4.05413 3.89008 3.64999 4.2735 3.15323 4.2735C2.65648 4.2735 2.25233 3.89008 2.25233 3.4188V2.39316H0.32089C0.216656 2.39316 0.117286 2.43991 0.0479169 2.5217C-0.0215425 2.6035 -0.0544254 2.71256 -0.0425335 2.82145L0.605665 8.78461C0.617737 9.45692 1.14179 9.99999 1.78431 9.99999H8.12584C8.76828 9.99999 9.29233 9.45692 9.30449 8.78452L9.95269 2.82136C9.96449 2.71256 9.93161 2.6035 9.86215 2.5217Z"
+                    fill="#231F20"
+                  />
+                  <path
+                    d="M3.15333 3.76068C3.35207 3.76068 3.51369 3.60735 3.51369 3.4188V1.53846C3.51369 1.01051 4.07486 0.683761 4.59477 0.683761H5.49567C6.04288 0.683761 6.39657 1.01923 6.39657 1.53846V3.4188C6.39657 3.60735 6.55829 3.76068 6.75693 3.76068C6.95558 3.76068 7.11729 3.60735 7.11729 3.4188V1.53846C7.11729 0.647009 6.43531 0 5.49567 0H4.59477C3.60126 0 2.79297 0.690171 2.79297 1.53846V3.4188C2.79297 3.60735 2.95459 3.76068 3.15333 3.76068Z"
+                    fill="#231F20"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="10" height="10" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              Корзина</a
+            >
           </li>
         </ul>
         <ul class="site-navigation">
@@ -69,16 +125,18 @@
             Самая длинная палка для селфи доступна в нашем магазине. Восемь
             (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
           </p>
-          <a class="details-button button-yellow-gradient" href="#"
-            >Подробнее</a
-          >
-          <div class="slider-list">
-            <button
-              class="slider-toggle slider-toggle-current"
-              type="button"
-            ></button>
-            <button class="slider-toggle" type="button"></button>
-            <button class="slider-toggle" type="button"></button>
+          <div class="item-buttons-block">
+            <a class="details-button button-yellow-gradient" href="#"
+              >Подробнее</a
+            >
+            <div class="slider-list">
+              <button
+                class="slider-toggle slider-toggle-current"
+                type="button"
+              ></button>
+              <button class="slider-toggle" type="button"></button>
+              <button class="slider-toggle" type="button"></button>
+            </div>
           </div>
           <ul class="specifications">
             <li>
@@ -98,69 +156,89 @@
       </section>
       <ul class="items-list container">
         <li>
-          <h3>Виртуальная реальность</h3>
-          <a href="#">
-            <img
-              src="img/vr.svg"
-              width="97"
-              height="55"
-              alt="Шлем виртуальной реальности"
-          /></a>
+          <a href="#"
+            ><h3>Виртуальная реальность</h3>
+            <div>
+              <img
+                src="img/vr.svg"
+                width="97"
+                height="55"
+                alt="Шлем виртуальной реальности"
+              />
+            </div>
+          </a>
         </li>
         <li class="monopod">
-          <h3>
-            Моноподы <br />
-            для селфи
-          </h3>
-          <a href="#">
-            <img
-              src="img/monopod.svg"
-              width="86"
-              height="117"
-              alt="Моноподы для селфи"
-          /></a>
+          <a href="#"
+            ><h3>
+              Моноподы <br />
+              для селфи
+            </h3>
+            <div>
+              <img
+                src="img/monopod.svg"
+                width="86"
+                height="117"
+                alt="Моноподы для селфи"
+              />
+            </div>
+          </a>
         </li>
         <li>
-          <h3>Экшн-камеры</h3>
-          <a href="#">
-            <img
-              src="img/action-camera.svg"
-              width="71"
-              height="87"
-              alt="Экшн-камера"
-          /></a>
+          <a href="#"
+            ><h3>Экшн-камеры</h3>
+            <div>
+              <img
+                src="img/action-camera.svg"
+                width="71"
+                height="87"
+                alt="Экшн-камера"
+              /></div
+          ></a>
         </li>
         <li class="fitness-braclet">
-          <h3>Фитнес-браслеты</h3>
-          <a href="#">
-            <img
-              src="img/fitness-braclet.svg"
-              width="107"
-              height="65"
-              alt="Фитнес-браслет"
-          /></a>
+          <a href="#"
+            ><h3>Фитнес-браслеты</h3>
+            <div>
+              <img
+                src="img/fitness-braclet.svg"
+                width="107"
+                height="65"
+                alt="Фитнес-браслет"
+              /></div
+          ></a>
         </li>
         <li>
-          <h3>Умные часы</h3>
-          <a href="#">
-            <img src="img/watch.svg" width="56" height="98" alt="Квадрокоптер"
-          /></a>
+          <a href="#"
+            ><h3>Умные часы</h3>
+            <div>
+              <img
+                src="img/watch.svg"
+                width="56"
+                height="98"
+                alt="Квадрокоптер"
+              /></div
+          ></a>
         </li>
         <li>
-          <h3>Квадрокоптеры</h3>
-          <a href="#">
-            <img
-              src="img/copter.svg"
-              width="132"
-              height="69"
-              alt="Квадрокоптер"
-          /></a>
+          <a href="#"
+            ><h3>Квадрокоптеры</h3>
+            <div>
+              <img
+                src="img/copter.svg"
+                width="132"
+                height="69"
+                alt="Квадрокоптер"
+              /></div
+          ></a>
         </li>
       </ul>
       <section class="our-terms">
         <ul>
           <li>
-            <a class="our-terms-delivery" href="#">Доставка</a>
+            <a class="our-terms-delivery button-yellow-gradient" href="#"
+              >Доставка</a
+            >
           </li>
           <li>
             <a class="our-terms-guarantee button-yellow-gradient" href="#"
@@ -184,36 +262,32 @@
       </section>
       <ul class="partners-list container">
         <li>
-          <img
-            src="img/logo-dji.png"
-            width="260"
-            height="100"
-            alt="Наш партнёр DJI"
-          />
+          <a
+            class="dji"
+            href="https://www.dji.com/"
+            aria-label="Наш партнёр DJI"
+          ></a>
         </li>
         <li>
-          <img
-            src="img/logo-spgadjet.png"
-            width="260"
-            height="100"
-            alt="Наш партнёр SP Gadjets"
-          />
+          <a
+            class="spgadjet"
+            href="http://www.sp-gadgets.com/"
+            aria-label="Наш партнёр SP Gadjets"
+          ></a>
         </li>
         <li>
-          <img
-            src="img/logo-gopro.png"
-            width="260"
-            height="100"
-            alt="Наш партнёр GoPro"
-          />
+          <a
+            class="gopro"
+            href="https://gopro.com"
+            aria-label="Наш партнёр GoPro"
+          ></a>
         </li>
         <li>
-          <img
-            src="img/logo-vive.png"
-            width="260"
-            height="100"
-            alt="Наш партнёр Vive"
-          />
+          <a
+            class="vive"
+            href="https://www.vive.com"
+            aria-label="Наш партнёр Vive"
+          ></a>
         </li>
       </ul>
       <div class="company-info container">
@@ -269,9 +343,9 @@
         <h2 class="visually-hidden">Условия и социальные сети</h2>
         <!-- скроем -->
         <ul class="conditions">
-          <li>Доставка</li>
-          <li>Гарантия</li>
-          <li>Контакты</li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="social-list">
           <li>
@@ -288,9 +362,9 @@
       <section class="contact-us">
         <h2 class="visually-hidden">Навигация и связь с нами</h2>
         <!-- скроем -->
-        <ul>
+        <ul class="interaction-items-white">
           <li>
-            <a class="login-footer" href="#"
+            <a class="login-white" href="#"
               ><svg
                 width="13"
                 height="14"
@@ -307,7 +381,7 @@
             >
           </li>
           <li>
-            <a class="compare-footer" href="#"
+            <a class="compare-white" href="#"
               ><svg
                 width="14"
                 height="14"
@@ -324,7 +398,7 @@
             >
           </li>
           <li>
-            <a class="cart-footer" href="#"
+            <a class="cart-white" href="#"
               ><svg
                 width="10"
                 height="10"
@@ -355,13 +429,16 @@
         <a class="footer-phone" href="tel:+74954959595"
           >Тел.: +7 (495) 495-95-95</a
         >
-        <img
+        <a
           class="website-by-logo"
-          src="img/logo-html-footer.svg"
-          width="27"
-          height="34"
-          alt="Логотип веб-студии"
-        />
+          href="https://htmlacademy.ru/intensive/htmlcss"
+        >
+          <img
+            src="img/logo-html-footer.svg"
+            width="27"
+            height="34"
+            alt="Логотип веб-студии"
+        /></a>
       </section>
     </footer>
   </body>
