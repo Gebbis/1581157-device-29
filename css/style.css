@@ -285,8 +285,12 @@ img {
   letter-spacing: normal;
   width: 100%;
   padding: 0;
-  padding-bottom: 44px;
+  padding-top: 11px;
+  padding-bottom: 34px;
+  padding-left: 60px;
+  padding-right: 56px;
   margin-top: 20px;
+  left: -60px;
   background-color: var(--basic-yellow);
   z-index: 1;
 }
