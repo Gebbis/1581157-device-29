@@ -248,7 +248,7 @@ img {
 }
 
 .link-to-login-black a:first-child,
-.link-to-unlogin a:first-child {
+.link-to-unlogin-black a:first-child {
   padding-left: 25px;
 }
 
@@ -256,11 +256,11 @@ img {
   margin-right: 213px;
 }
 
-.link-to-unlogin {
+.link-to-unlogin-black {
   margin-right: 62px;
 }
 
-.link-to-unlogin a:first-child {
+.link-to-unlogin-black a:first-child {
   margin-right: 17px;
 }
 
@@ -274,7 +274,7 @@ img {
   display: none;
 }
 
-.link-to-login-black {
+.login-black-show {
   display: block;
 }
 
@@ -958,7 +958,7 @@ img {
   margin-right: 39px;
 }
 
-.link-to-unlogin-white .login-white {
+.link-to-unlogin-white a:first-child {
   margin-right: 20px;
 }
 
@@ -966,7 +966,7 @@ img {
   display: none;
 }
 
-.link-to-login-white {
+.login-white-show {
   display: block;
 }
 
