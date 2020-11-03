@@ -8,86 +8,92 @@
   </head>
 
   <body>
-    <header class="container">
-      <nav class="navigation">
-        <a class="main-logo">
-          <img
-            src="img/main-logo.svg"
-            width="163"
-            height="35"
-            alt="Логотип магазина"
-          />
-        </a>
-        <ul class="interaction-items">
-          <li class="site-search">
+    <header class="header container">
+      <a class="main-logo">
+        <img
+          src="img/main-logo.png"
+          width="163"
+          height="35"
+          alt="Логотип магазина Device"
+        />
+      </a>
+      <ul class="interaction-items">
+        <li class="site-search">
+          <form
+            class="site-search-form"
+            action="https://echo.htmlacademy.ru/"
+            method="POST"
+          >
             <input type="search" placeholder="Поиск по сайту" />
-            <div>
-              <button type="button">Найти</button>
+            <div class="search-button-wrapper">
+              <button type="submit">Найти</button>
             </div>
-          </li>
-          <li class="login-black">
-            <a href="#"
-              ><svg
-                width="13"
-                height="14"
-                viewBox="0 0 13 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+          </form>
+        </li>
+        <li class="login-black">
+          <a href="#"
+            ><svg
+              width="13"
+              height="14"
+              viewBox="0 0 13 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.49996 2.33333C7.69704 2.33333 8.66663 3.3775 8.66663 4.66666C8.66663 5.95583 7.69704 7 6.49996 7C5.30288 7 4.33329 5.95583 4.33329 4.66666C4.33329 3.3775 5.30288 2.33333 6.49996 2.33333ZM6.49996 11.6667C6.49996 11.6667 10.8333 11.6667 10.8333 10.5C10.8333 9.1 8.72079 7.58333 6.49996 7.58333C4.27913 7.58333 2.16663 9.1 2.16663 10.5C2.16663 11.6667 6.49996 11.6667 6.49996 11.6667Z"
+                fill="black"
+              />
+            </svg>
+            Войти</a
+          >
+        </li>
+        <li class="compare-black">
+          <a href="#"
+            ><svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.91675 5.36667H4.66675V11.0833H2.91675V5.36667ZM6.18342 2.91667H7.81675V11.0833H6.18342V2.91667ZM9.45008 7.58334H11.0834V11.0833H9.45008V7.58334Z"
+                fill="black"
+              />
+            </svg>
+            Сравнить</a
+          >
+        </li>
+        <li class="cart-black">
+          <a href="#"
+            ><svg
+              width="10"
+              height="10"
+              viewBox="0 0 10 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0)">
                 <path
-                  d="M6.49996 2.33333C7.69704 2.33333 8.66663 3.3775 8.66663 4.66666C8.66663 5.95583 7.69704 7 6.49996 7C5.30288 7 4.33329 5.95583 4.33329 4.66666C4.33329 3.3775 5.30288 2.33333 6.49996 2.33333ZM6.49996 11.6667C6.49996 11.6667 10.8333 11.6667 10.8333 10.5C10.8333 9.1 8.72079 7.58333 6.49996 7.58333C4.27913 7.58333 2.16663 9.1 2.16663 10.5C2.16663 11.6667 6.49996 11.6667 6.49996 11.6667Z"
-                  fill="black"
+                  d="M9.86215 2.5217C9.79278 2.43991 9.69341 2.39316 9.58927 2.39316H7.65774V3.4188C7.65774 3.89008 7.25359 4.2735 6.75684 4.2735C6.26008 4.2735 5.85593 3.89008 5.85593 3.4188V2.39316H4.05413V3.4188C4.05413 3.89008 3.64999 4.2735 3.15323 4.2735C2.65648 4.2735 2.25233 3.89008 2.25233 3.4188V2.39316H0.32089C0.216656 2.39316 0.117286 2.43991 0.0479169 2.5217C-0.0215425 2.6035 -0.0544254 2.71256 -0.0425335 2.82145L0.605665 8.78461C0.617737 9.45692 1.14179 9.99999 1.78431 9.99999H8.12584C8.76828 9.99999 9.29233 9.45692 9.30449 8.78452L9.95269 2.82136C9.96449 2.71256 9.93161 2.6035 9.86215 2.5217Z"
+                  fill="#231F20"
                 />
-              </svg>
-              Войти</a
-            >
-          </li>
-          <li class="compare-black">
-            <a href="#"
-              ><svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
                 <path
-                  d="M2.91675 5.36667H4.66675V11.0833H2.91675V5.36667ZM6.18342 2.91667H7.81675V11.0833H6.18342V2.91667ZM9.45008 7.58334H11.0834V11.0833H9.45008V7.58334Z"
-                  fill="black"
+                  d="M3.15333 3.76068C3.35207 3.76068 3.51369 3.60735 3.51369 3.4188V1.53846C3.51369 1.01051 4.07486 0.683761 4.59477 0.683761H5.49567C6.04288 0.683761 6.39657 1.01923 6.39657 1.53846V3.4188C6.39657 3.60735 6.55829 3.76068 6.75693 3.76068C6.95558 3.76068 7.11729 3.60735 7.11729 3.4188V1.53846C7.11729 0.647009 6.43531 0 5.49567 0H4.59477C3.60126 0 2.79297 0.690171 2.79297 1.53846V3.4188C2.79297 3.60735 2.95459 3.76068 3.15333 3.76068Z"
+                  fill="#231F20"
                 />
-              </svg>
-              Сравнить</a
-            >
-          </li>
-          <li class="cart-black">
-            <a href="#"
-              ><svg
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0)">
-                  <path
-                    d="M9.86215 2.5217C9.79278 2.43991 9.69341 2.39316 9.58927 2.39316H7.65774V3.4188C7.65774 3.89008 7.25359 4.2735 6.75684 4.2735C6.26008 4.2735 5.85593 3.89008 5.85593 3.4188V2.39316H4.05413V3.4188C4.05413 3.89008 3.64999 4.2735 3.15323 4.2735C2.65648 4.2735 2.25233 3.89008 2.25233 3.4188V2.39316H0.32089C0.216656 2.39316 0.117286 2.43991 0.0479169 2.5217C-0.0215425 2.6035 -0.0544254 2.71256 -0.0425335 2.82145L0.605665 8.78461C0.617737 9.45692 1.14179 9.99999 1.78431 9.99999H8.12584C8.76828 9.99999 9.29233 9.45692 9.30449 8.78452L9.95269 2.82136C9.96449 2.71256 9.93161 2.6035 9.86215 2.5217Z"
-                    fill="#231F20"
-                  />
-                  <path
-                    d="M3.15333 3.76068C3.35207 3.76068 3.51369 3.60735 3.51369 3.4188V1.53846C3.51369 1.01051 4.07486 0.683761 4.59477 0.683761H5.49567C6.04288 0.683761 6.39657 1.01923 6.39657 1.53846V3.4188C6.39657 3.60735 6.55829 3.76068 6.75693 3.76068C6.95558 3.76068 7.11729 3.60735 7.11729 3.4188V1.53846C7.11729 0.647009 6.43531 0 5.49567 0H4.59477C3.60126 0 2.79297 0.690171 2.79297 1.53846V3.4188C2.79297 3.60735 2.95459 3.76068 3.15333 3.76068Z"
-                    fill="#231F20"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0">
-                    <rect width="10" height="10" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              Корзина</a
-            >
-          </li>
-        </ul>
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="10" height="10" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            Корзина</a
+          >
+        </li>
+      </ul>
+      <nav class="navigation">
         <ul class="site-navigation">
           <li class="menu-catalog">
             <a class="items-catalog" href="#">Каталог товаров</a>
@@ -115,8 +121,8 @@
 
     <main>
       <h1 class="visually-hidden">Выбери свой гаджет</h1>
-      <!-- скроем -->
       <section class="product container">
+        <h2 class="visually-hidden">Популярные товары</h2>
         <img
           class="product-photo"
           src="img/product-photo-1.png"
@@ -166,7 +172,7 @@
         <li>
           <a href="#"
             ><h3>Виртуальная реальность</h3>
-            <div>
+            <div class="product-image-box">
               <img
                 src="img/vr.svg"
                 width="97"
@@ -182,7 +188,7 @@
               Моноподы <br />
               для селфи
             </h3>
-            <div>
+            <div class="product-image-box">
               <img
                 src="img/monopod.svg"
                 width="86"
@@ -195,7 +201,7 @@
         <li>
           <a href="#"
             ><h3>Экшн-камеры</h3>
-            <div>
+            <div class="product-image-box">
               <img
                 src="img/action-camera.svg"
                 width="71"
@@ -207,7 +213,7 @@
         <li class="fitness-braclet">
           <a href="#"
             ><h3>Фитнес-браслеты</h3>
-            <div>
+            <div class="product-image-box">
               <img
                 src="img/fitness-braclet.svg"
                 width="107"
@@ -219,7 +225,7 @@
         <li>
           <a href="#"
             ><h3>Умные часы</h3>
-            <div>
+            <div class="product-image-box">
               <img
                 src="img/watch.svg"
                 width="56"
@@ -231,7 +237,7 @@
         <li>
           <a href="#"
             ><h3>Квадрокоптеры</h3>
-            <div>
+            <div class="product-image-box">
               <img
                 src="img/copter.svg"
                 width="132"
@@ -242,6 +248,7 @@
         </li>
       </ul>
       <section class="our-terms">
+        <h2 class="visually-hidden">Наши правила</h2>
         <ul>
           <li>
             <a class="our-terms-delivery button-yellow-gradient" href="#"
@@ -259,7 +266,7 @@
             >
           </li>
         </ul>
-        <div>
+        <div class="delivery-info">
           <h2>Доставка</h2>
           <p>
             Мы с удовольствием доставим ваш товар прямо к вашему подъезду
@@ -329,7 +336,67 @@
             height="222"
             alt="Карта проезда"
           />
+          <section class="map-popup">
+            <h2 class="visually-hidden">Интерактивная карта</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.770649319164!2d37.52787958897326!3d55.68647554752722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1604340082199!5m2!1sru!2sru"
+              width="994"
+              height="593"
+              frameborder="0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+              aria-label="Большая карта проезда"
+            ></iframe>
+            <button
+              class="map-close-button popup-close-button"
+              type="button"
+            ></button>
+          </section>
           <a class="button-yellow-gradient" href="#">Напишите нам</a>
+          <form
+            class="write-us-form"
+            action="https://echo.htmlacademy.ru/"
+            method="POST"
+          >
+            <h2 class="visually-hidden">Форма обратной связи</h2>
+            <div class="write-us-inputs-wrapper">
+              <label class="name-surname" for="name-surname"
+                >Ваше имя:
+                <input
+                  type="text"
+                  id="name-surname"
+                  name="name-surname"
+                  placeholder="Имя Фамилия"
+                  pattern="^[А-Яа-яЁё\s]+$"
+              /></label>
+              <label class="email-box" for="email-box"
+                >Ваш e-mail:
+                <input
+                  id="email-box"
+                  name="email-box"
+                  type="email"
+                  placeholder="email@example.com"
+              /></label>
+              <label class="mail-text"
+                >Текст письма:
+                <textarea
+                  name="mail-text"
+                  placeholder="В свободной форме"
+                ></textarea>
+              </label>
+            </div>
+            <button
+              class="write-us-submit button-yellow-gradient"
+              type="submit"
+            >
+              Отправить
+            </button>
+            <button
+              class="write-us-close-button popup-close-button"
+              type="button"
+            ></button>
+          </form>
         </section>
       </div>
     </main>
@@ -337,19 +404,17 @@
     <footer class="footer">
       <section class="our-address">
         <h2 class="visually-hidden">Наш адрес</h2>
-        <!-- скроем -->
         <img
           class="logo-footer"
-          src="img/logo-footer.svg"
+          src="img/logo-footer.png"
           width="163"
           height="35"
-          alt="Логотип магазина"
+          alt="Логотип магазина Device"
         />
         <p>г. Москва, ул. Строителей, 15</p>
       </section>
       <section>
         <h2 class="visually-hidden">Условия и социальные сети</h2>
-        <!-- скроем -->
         <ul class="conditions">
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
@@ -369,7 +434,6 @@
       </section>
       <section class="contact-us">
         <h2 class="visually-hidden">Навигация и связь с нами</h2>
-        <!-- скроем -->
         <ul class="interaction-items-white">
           <li>
             <a class="login-white" href="#"
