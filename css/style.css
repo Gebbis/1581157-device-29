@@ -656,7 +656,7 @@ img {
   width: 495px;
 }
 
-.delivery-info {
+.offer-info-show {
   display: block;
 }
 
@@ -699,7 +699,8 @@ img {
   margin-top: 23px;
 }
 
-.our-terms-button:focus {
+.our-terms-button:focus,
+.our-terms-button-active {
   box-sizing: unset;
   width: 258px;
   padding-left: 19px;
@@ -796,12 +797,14 @@ img {
   line-height: 28px;
 }
 
-.company-info section {
+.about,
+.contacts {
   position: relative;
   padding-top: 17px;
 }
 
-.company-info section::before {
+.about::before,
+.contacts::before {
   position: absolute;
   content: "";
   width: 80px;
@@ -855,12 +858,26 @@ img {
   margin-top: 40px;
 }
 
-.map {
+.map-button {
+  width: 560px;
+  height: 222px;
   margin-top: 28px;
+  border: none;
+  outline: none;
+  background-image: url(../img/map.png);
 }
 
-.contacts a {
+.contacts a,
+.write-us-button {
   margin-top: 72px;
+}
+
+.write-us-button {
+  font-family: "Gilroy", "Arial", sans-serif;
+  width: 260px;
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 
 .footer {
@@ -1647,8 +1664,9 @@ img {
   position: fixed;
   width: 994px;
   height: 593px;
-  left: 450px;
   top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -1656,7 +1674,7 @@ img {
   display: block;
 }
 
-.popup-close-button {
+.popup-close-cross {
   position: fixed;
   width: 55px;
   height: 55px;
@@ -1674,7 +1692,7 @@ img {
   top: 20px;
 }
 
-.popup-close-button::before {
+.popup-close-cross::before {
   content: "";
   position: absolute;
   width: 30px;
@@ -1684,11 +1702,11 @@ img {
   background-image: url(../img/close-cross.svg);
 }
 
-.popup-close-button:hover {
+.popup-close-cross:hover {
   opacity: 1;
 }
 
-.popup-close-button:focus {
+.popup-close-cross:focus {
   opacity: 0.3;
 }
 
@@ -1701,8 +1719,9 @@ img {
   font-family: "Gilroy", "Arial", sans-serif;
   width: 960px;
   height: 550px;
-  left: 450px;
   top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 0 100px;
   padding-top: 92px;
   padding-bottom: 24px;
@@ -1762,8 +1781,8 @@ img {
 }
 
 .write-us-close-button {
-  left: 1335px;
-  top: 120px;
+  left: 884px;
+  top: 20px;
 }
 
 .write-us-form input:hover,
@@ -1782,7 +1801,7 @@ img {
   background-color: var(--input-invalid-pink);
 }
 
-.first-item-card {
+.product-item-show {
   display: grid;
 }
 
@@ -1810,7 +1829,8 @@ img {
 }
 
 .third-item-card h2 {
-  z-index: 2;
+  position: relative;
+  z-index: 1;
 }
 
 .third-item-card .item-card {

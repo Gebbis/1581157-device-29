@@ -118,12 +118,12 @@
           <li class="menu-catalog">
             <a class="items-catalog" href="#">Каталог товаров</a>
             <ul>
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Квадрокоптер</a></li>
-              <li><a href="#">Моноподы для селфи</a></li>
-              <li><a href="#">Умные часы</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
+              <li><a href="catalog.html">Виртуальная реальность</a></li>
+              <li><a href="catalog.html">Фитнес-браслеты</a></li>
+              <li><a href="catalog.html">Квадрокоптер</a></li>
+              <li><a href="catalog.html">Моноподы для селфи</a></li>
+              <li><a href="catalog.html">Умные часы</a></li>
+              <li><a href="catalog.html">Экшн-камеры</a></li>
             </ul>
           </li>
           <li class="menu-delivery">
@@ -144,7 +144,7 @@
       <section class="popular-products container">
         <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="popular-products-list">
-          <li class="product first-item-card">
+          <li class="product first-item-card product-item-show">
             <img
               class="product-photo"
               src="img/product-photo-1.png"
@@ -219,8 +219,8 @@
               alt="Фото дрона"
             />
             <div class="item-card">
-              <span class="item-number">03</span>
               <h2>Порхает как бабочка, жалит как пчела!</h2>
+              <span class="item-number">03</span>
               <p class="item-description">
                 Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
                 лазером, замаскированным под стандартную камеру.
@@ -243,11 +243,17 @@
         </ul>
         <div class="slider-list">
           <button
-            class="slider-toggle slider-toggle-current"
+            class="slider-toggle first-slider-toggle slider-toggle-current"
             type="button"
           ></button>
-          <button class="slider-toggle" type="button"></button>
-          <button class="slider-toggle" type="button"></button>
+          <button
+            class="slider-toggle second-slider-toggle"
+            type="button"
+          ></button>
+          <button
+            class="slider-toggle third-slider-toggle"
+            type="button"
+          ></button>
         </div>
       </section>
       <ul class="items-list container">
@@ -334,7 +340,7 @@
         <ul class="our-terms-slider">
           <li>
             <button
-              class="our-terms-button button-yellow-gradient"
+              class="our-terms-button our-terms-button-delivery button-yellow-gradient our-terms-button-active"
               type="button"
             >
               Доставка
@@ -342,7 +348,7 @@
           </li>
           <li>
             <button
-              class="our-terms-button button-yellow-gradient"
+              class="our-terms-button our-terms-button-warranty button-yellow-gradient"
               type="button"
             >
               Гарантия
@@ -350,7 +356,7 @@
           </li>
           <li>
             <button
-              class="our-terms-button button-yellow-gradient"
+              class="our-terms-button our-terms-button-credit button-yellow-gradient"
               type="button"
             >
               Кредит
@@ -358,7 +364,7 @@
           </li>
         </ul>
         <ul class="our-terms-offers">
-          <li class="offer-info delivery-info">
+          <li class="offer-info delivery-info offer-info-show">
             <h2>Доставка</h2>
             <p>
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду
@@ -438,13 +444,11 @@
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
             проверить работоспособность покупки. Всякое бывает.
           </p>
-          <img
-            class="map"
-            src="img/map.png"
-            width="560"
-            height="222"
-            alt="Карта проезда"
-          />
+          <button
+            class="map-button"
+            type="button"
+            aria-label="Карта проезда"
+          ></button>
           <section class="map-popup">
             <h2 class="visually-hidden">Интерактивная карта</h2>
             <iframe
@@ -457,11 +461,13 @@
               aria-label="Большая карта проезда"
             ></iframe>
             <button
-              class="map-close-button popup-close-button"
+              class="map-close-button popup-close-cross"
               type="button"
             ></button>
           </section>
-          <a class="button-yellow-gradient" href="#">Напишите нам</a>
+          <button class="write-us-button button-yellow-gradient">
+            Напишите нам
+          </button>
           <form
             class="write-us-form"
             action="https://echo.htmlacademy.ru/"
@@ -499,7 +505,7 @@
               Отправить
             </button>
             <button
-              class="write-us-close-button popup-close-button"
+              class="write-us-close-button popup-close-cross"
               type="button"
             ></button>
           </form>
@@ -644,5 +650,7 @@
         /></a>
       </section>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
