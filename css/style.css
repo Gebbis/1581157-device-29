@@ -1421,6 +1421,12 @@ img {
   background-image: url(../img/radio-off.svg);
 }
 
+.filter-input-checkbox:focus + label,
+.bluetooth-radio-button:focus + label {
+  outline: 1px solid var(--basic-black);
+  outline-offset: 5px;
+}
+
 .bluetooth-radio-button:checked + label::before {
   background-image: url(../img/radio-on.svg);
 }
@@ -1718,13 +1724,12 @@ img {
   flex-direction: row;
   font-family: "Gilroy", "Arial", sans-serif;
   width: 960px;
-  height: 550px;
   top: 100px;
   left: 50%;
   transform: translateX(-50%);
   padding: 0 100px;
   padding-top: 92px;
-  padding-bottom: 24px;
+  padding-bottom: 61px;
   box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
   background-color: var(--basic-white);
 }
@@ -1766,6 +1771,10 @@ img {
   padding-bottom: 15px;
 }
 
+.mail-text {
+  margin-top: 31px;
+}
+
 .mail-text > textarea {
   box-sizing: border-box;
   width: 760px;
@@ -1775,7 +1784,7 @@ img {
 .write-us-submit {
   width: 200px;
   border: none;
-  margin-top: 12px;
+  margin-top: 46px;
   align-self: flex-start;
   background-color: transparent;
 }
